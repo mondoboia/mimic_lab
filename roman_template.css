@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel:400,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap');
+
+html {
+    /*width: 100%;*/
+    /*height: 100%;*/
+    background: url(marble_background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/*per l'immagine forse sarebbe meglio averla in repeat ma adjustable*/
+
+body {
+/*    width: 100%;
+    height: 100%;*/
+    color: rgb(132, 142, 151);
+    border-radius: 3px;
+    background: rgba(220, 221, 222, 0.5);
+    box-shadow: inset 5px 5px 8px #b0b1b2,
+    inset -5px -5px 8px #ffffff;
+    padding: 20px;
+}
+
+article {
+    font-family: 'Cinzel', serif;
+    text-shadow: 0 1px 0 rgba(255,255,255,.3), 0 -1px 0 rgba(0,0,0,.7);
+    text-align: justify;
+    font-size: 2rem;
+    font-weight: 400;
+    /*line-height: 1;*/
+    /*!*box-shadow:*!*/
+    background: rgba(220, 221, 222, 0.5);
+    border-radius: 3px;
+    box-shadow: inset 5px 5px 8px #8a8e91,
+    inset -5px -5px 8px #ced4d9;
+    padding: 40px 30px;
+}
+
+header {
+    /*display: grid;*/
+    /*grid-template-columns: 1fr;*/
+    /*border: 30px double rgba(131, 141, 150, 0.7);*/
+    /*margin: thick inset;*/
+    text-align: center;
+}
+/*scuro: 132, 142, 151*/
+/*medio: 172, 177, 181*/
+/*chiaro: 220, 221, 222*/
+
+
+h1, h2, h3, h4 {
+    color: #E34239;
+    font-weight: normal;
+}
+
+p {
+
+}
+
+div > p:first-of-type:first-letter {
+    color: #E34239;
+}
+
+figure {
+    display: block;
+    justify-content: center;
+}
+
+
+
+img {
+    width: 80%;
+    height: auto;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    padding: 20px;
+    border-radius: 1px;
+    background: linear-gradient(145deg, #9b9fa3, #b8bdc2);
+    box-shadow:  8px 8px 15px #969a9d,
+    -8px -8px 15px #c2c8cd;
+}
+
+em, i, cite {
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+strong, b {
+    color: #E34239;
+    font-weight: normal;
+}
+
+a:link {
+    color: #E34239;
+    text-decoration: overline;
+}
+
+a:visited {
+    color: #C22018;
+}
+

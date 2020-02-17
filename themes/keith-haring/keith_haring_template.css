@@ -14,10 +14,11 @@
 
 
 body {
-    background: url(tuttomondo_bacground.jpg) no-repeat center center fixed;
+    background: url("p322_haringshow.jpg") no-repeat center center fixed;
     background-size: cover;
     font-size: 100%;
     margin: 0;
+    overflow-x: hidden;
 }
 
 article {
@@ -33,9 +34,9 @@ article {
 }
 
 header {
-    border-bottom: 5px solid rgba(255, 255, 255, 0.9);
+/*    border-bottom: 5px solid rgba(255, 255, 255, 0.9);
     border-radius: 3px;
-    padding-bottom: 20px;
+    padding-bottom: 20px;*/
 }
 
 header p {
@@ -81,11 +82,15 @@ h4 {
 }
 
 hr {
-    border-top: transparent;
+/*    border-top: transparent;
     border-right: transparent;
     border-left: transparent;
     border-bottom: 7px dashed #FE7600;
-    max-width: 90%;
+    max-width: 90%;*/
+    display:block;
+    border: 0;
+    height:20px;
+    background-image:url('wave-square-solid.svg');
 }
 
 
@@ -131,8 +136,8 @@ img {
     max-width: 80%;
     -webkit-filter: hue-rotate(90deg);
     filter: hue-rotate(90deg); /*or saturate?*/
-    border: 10px double white;
-    border-radius: 2px;
+    border: 8px solid white;
+    border-radius: 2% 98% 1% 99% / 97% 3% 97% 3%;
 }
 
 img:hover {
@@ -143,14 +148,6 @@ img:hover {
 figcaption {
     font-family: 'La Belle Aurore', cursive;
     font-size: 1.2em;
-    /*-moz-transform: rotate(135deg);*/
-    /*-webkit-transform: rotate(135deg);*/
-    /*-o-transform: rotate(135deg);*/
-    /*-ms-transform: rotate(130deg);*/
-    transform: rotate(130deg);
-    position: absolute;
-    bottom: 8px;
-    right: 16px;
 }
 
 /* Animation from animista.net*/
@@ -240,3 +237,14 @@ footer {
     font-size: 10px;
 }
 
+.block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.en, .es {
+    width: 48%;
+
+}

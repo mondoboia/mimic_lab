@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel:400,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap');
+
+html {
+    background: url(marble_background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+body {
+    color: rgb(114, 124, 133);
+    border-radius: 3px;
+    background: rgba(220, 221, 222, 0.5);
+    box-shadow: inset 5px 5px 8px #b0b1b2,
+    inset -5px -5px 8px #ffffff;
+    padding: 1.25rem;
+    margin: 1.5rem;
+}
+
+article {
+    font-family: 'Cinzel', serif;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.57);
+    text-align: justify;
+    font-size: 1.8rem;
+    font-weight: normal;
+    background: rgba(220, 221, 222, 0.5);
+    border-radius: 3px;
+    box-shadow: inset 5px 5px 8px #8a8e91,
+    inset -5px -5px 8px #ced4d9;
+    padding: 2.5rem;
+    line-height: 1.1;
+}
+
+header {
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: inset 5px 5px 10px #8a8e91,
+    inset -5px -5px 10px #ced4d9;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+    text-transform: uppercase;
+    color: #E34239;
+    font-weight: normal;
+    text-align: center;
+    margin: 0;
+    padding: .5rem;
+}
+
+h1 {
+    font-size: 3rem;
+    padding: 1rem 0 1rem 0;
+}
+
+h2 {
+    font-size: 2.6rem;
+    padding: 1rem 0 1rem 0;
+}
+
+h3 {
+    font-size: 2.2rem;
+    padding: 1rem 0 1rem 0;
+}
+
+h4 {
+    font-size: 2rem;
+    padding: 1rem 0 1rem 0;
+}
+
+header h1, header h2, header h3, header h4 {
+    color: #D4AF37;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.67);
+}
+
+header p {
+    font-size: 1rem;
+}
+
+footer p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+div {
+    margin-bottom: 1.5rem;
+}
+
+div:not(header div, footer div) {
+    margin-bottom: 1.5rem;
+}
+
+
+figure {
+    align-content: center;
+    margin: 1.5rem 0;
+}
+
+img {
+    width: 80%;
+    height: auto;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    border-radius: 5px;
+    background: linear-gradient(145deg, #c6c7c8, #ebecee);
+    box-shadow:  7px 7px 13px #b2b3b4,
+    -7px -7px 13px #ffffff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
+figcaption {
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+em, i, cite {
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+strong, b {
+    color: #E34239;
+    font-weight: normal;
+}
+
+a:link {
+    color: #E34239;
+    text-decoration: overline;
+}
+
+a:visited {
+    color: #C22018;
+}
+
+blockquote {
+    text-align: left;
+    font-size: 2.2rem;
+    margin: 1.5rem 0 1.5rem .8rem;
+}
+
+li {
+    font-size: 1.8rem;
+}
+
+ol {
+    list-style: upper-roman;
+    padding-inline-start: 2rem;
+}
+
+ul {
+    list-style-image: url("caret-up-solid.svg");
+}
+
+hr {
+    margin: 1vw 0;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2vw;
+}
+
+th, td {
+    border: .1vw solid #727C85;
+    text-align: center;
+    padding: .5vw .2vw;
+}
+
+th {
+    font-weight: normal;
+    color: #E34239;
+}
+
+sup, sub {
+    font-size: .8rem;
+}
+
+@media (max-width: 786px) {
+    article {
+        font-size: 0.9rem;
+        padding: 1.25rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+    h4 {
+        font-size: 1rem;
+    }
+    header p {
+        font-size: .5rem;
+    }
+    footer p {
+        font-size: .5rem;
+    }
+    figcaption {
+        font-size: .75rem;
+    }
+    blockquote {
+        font-size: 1.1rem;
+    }
+    sub, sup {
+        font-size: .4rem;
+    }
+    li {
+        font-size: 0.9rem;
+    }
+}
+
+.block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.en, .es {
+    width: 48%;
+}
+
+.en div, .es div {
+    font-size: 0.9em;
+}
+.en h1, .es h1  {
+    font-size: 1.5em;
+}
+.en h2, .es h2 {
+    font-size: 1.3em;
+}
+.en h3, .es h3 {
+    font-size: 1.2em;
+}
+.en h4, .es h4 {
+    font-size: 1em;
+}
+.en footer p, .es footer p {
+    font-size: 0.7rem;
+}
+.en header p, .es header p {
+    font-size: .7rem;
+}
+.en figcaption, .es figcaption {
+    font-size: .75rem;
+}
+.en blockquote, .es blockquote {
+    font-size: 1.1rem;
+}
+.en sup, .es sup {
+    font-size: .4rem;
+}
+
+.en li, .es li {
+    font-size: 0.9rem;
+}
+
+.en table, .es table {
+    font-size: 0.5rem;
+}
+

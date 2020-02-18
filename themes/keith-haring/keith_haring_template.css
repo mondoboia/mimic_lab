@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Patrick+Hand+SC&display=swap');
-
 @import url("https://fonts.googleapis.com/css?family=La+Belle+Aurore&display=swap");
+
+@import url('https://fonts.googleapis.com/css?family=Walter+Turncoat&display=swap');
 
 @font-face {
     font-family: justadream_hallow;
@@ -13,109 +13,104 @@
 }
 
 
-body {
+html, body {
     background: url("p322_haringshow.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    font-size: 100%;
+    overflow-wrap: break-word;
+}
+
+body {
     margin: 0;
+    padding: 0 3rem;
     overflow-x: hidden;
 }
 
 article {
-    background-color: #000000;
+    background-color: #0D0D0D;
     justify-content: center;
     align-items: center;
-    color: rgba(255, 255, 255, 0.8);
-    margin: 50px;
-    padding: 20px;
-    border: 10px solid rgba(255, 255, 255, 0.9);
-    box-shadow: 0 0 0 15px #000000;
-    font-family: "Patrick Hand SC", cursive;
+    color: #F9F9F9;
+    margin: 3.125rem;
+    padding: 1.25rem;
+    border: 10px solid #F9F9F9;
+    box-shadow: 0 0 0 15px #0D0D0D;
+    font-family: "Walter Turncoat", cursive;
 }
 
 header {
-/*    border-bottom: 5px solid rgba(255, 255, 255, 0.9);
-    border-radius: 3px;
-    padding-bottom: 20px;*/
+    padding: 0;
+    margin: 0;
+    line-height: 1;
 }
 
 header p {
-    font-family: "Patrick Hand SC", cursive; !important;
-    font-size: 0.9em;
+    font-size: 1rem;
     text-align: center;
 }
-
-section {
-    line-height: normal;
-    font-weight: normal;
-}
-
 
 h1, h2 {
     font-family: justadream_hallow, sans-serif;
-    line-height: 0.8;
     font-weight: normal;
     text-align: center;
+    margin: 0 0 1rem 0;
 }
 
 h3, h4 {
     font-family: justadream_solid, sans-serif;
-    line-height: 0.8;
     font-weight: normal;
     text-align: left;
+    margin-bottom: .5rem;
 }
 
 h1 {
-    font-size: 4.0em;
+    font-size: 5rem;
 }
 
 h2 {
-    font-size: 2.5em;
+    font-size: 4rem;
 }
 
 h3 {
-    font-size: 1.2em;
+    font-size: 3.5rem;
 }
 
 h4 {
-    font-size: 0.9em;
+    font-size: 3rem;
 }
 
 hr {
-/*    border-top: transparent;
-    border-right: transparent;
-    border-left: transparent;
-    border-bottom: 7px dashed #FE7600;
-    max-width: 90%;*/
     display:block;
     border: 0;
-    height:20px;
+    height: 1rem;
     background-image:url('wave-square-solid.svg');
+    margin: 1rem 0;
 }
 
 
 h1, h2, h3, p, hr {
-    /*text-shadow: 0 0 4px rgba(255,255,255,0.6);*/
     transform: rotate(-1deg) rotateY(15deg);
     -webkit-transform: rotate(-1deg) rotateY(15deg);
 }
 
-/*:not(a) {*/
-/*    text-shadow: 0 0 4px rgba(255,255,255,0.6);*/
-/*}*/
-
 p {
-    font-size: 50px;
+    margin: 0 .5rem 1rem 1rem;
 }
 
-p strong, p b {
+p, li, dl {
+    font-size: 2rem;
+}
+
+p strong, p b, th {
     color: #FE0471;
     font-weight: normal;
 }
 
 blockquote {
     font-family: justadream_solid, sans-serif;
-    font-size: 2.1em;
+    font-size: 2.1rem;
 }
 
 blockquote:hover {
@@ -125,19 +120,22 @@ blockquote:hover {
 
 
 figure {
-    position: relative;
+    margin: 1rem;
+    align-content: center;
 }
 
 img {
-    display: flex;
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    height: auto;
-    max-width: 80%;
+    margin-bottom: 1rem;
+    width: 90%;
+    max-height: min-content;
     -webkit-filter: hue-rotate(90deg);
-    filter: hue-rotate(90deg); /*or saturate?*/
-    border: 8px solid white;
+    filter: hue-rotate(90deg);
+    border: 8px solid #F9F9F9;
     border-radius: 2% 98% 1% 99% / 97% 3% 97% 3%;
+    background-color: #F9F9F9;
 }
 
 img:hover {
@@ -147,7 +145,10 @@ img:hover {
 
 figcaption {
     font-family: 'La Belle Aurore', cursive;
-    font-size: 1.2em;
+    font-size: 1.2rem;
+    float: right;
+    text-align: right;
+    margin-bottom: 1rem;
 }
 
 /* Animation from animista.net*/
@@ -229,12 +230,83 @@ a:visited {
 }
 
 sup {
-
+    font-size: .8rem;
 }
 
-footer {
+footer p {
     text-align: left;
-    font-size: 10px;
+    font-size: 1rem;
+    margin: 0;
+}
+
+ul {
+    list-style-image: url("times-solid.svg");
+}
+
+table {
+    border-collapse: collapse;
+    margin: 1rem auto;
+}
+table td {
+    padding: .1vw;
+    border: 2px solid #F9F9F9;
+    text-align: center;
+}
+table tr:first-child td {
+    border-top: 0;
+}
+table tr td:first-child {
+    border-left: 0;
+}
+table tr:last-child td {
+    border-bottom: 0;
+}
+table tr td:last-child {
+    border-right: 0;
+}
+
+th, td {
+    font-size: .8vw;
+}
+
+@media (max-width: 786px) {
+    article {
+        margin: 2rem;
+        padding: 0.8rem;
+    }
+    h1 {
+        font-size: 3.3rem;
+    }
+    h2 {
+        font-size: 2.6rem;
+    }
+    h3 {
+        font-size: 2.3rem;
+    }
+    h4 {
+        font-size: 2rem;
+    }
+    h4 {
+        height: .6rem;
+    }
+    p, li, dl {
+        font-size: 1.3rem;
+    }
+    header p {
+        font-size: .6rem;
+    }
+    footer p {
+        font-size: .6rem;
+    }
+    figcaption {
+        font-size: .8rem;
+    }
+    blockquote {
+        font-size: 1.3rem;
+    }
+    sub, sup {
+        font-size: .5rem;
+    }
 }
 
 .block {
@@ -246,5 +318,33 @@ footer {
 
 .en, .es {
     width: 48%;
-
 }
+
+.en p, .es p, .en li, .es li, .en dl, .es dl {
+    font-size: 2vw;
+}
+.en h1, .es h1  {
+    font-size: 5vw;
+}
+.en h2, .es h2 {
+    font-size: 4vw;
+}
+.en h3, .es h3 {
+    font-size: 3.5vw;
+}
+.en h4, .es h4 {
+    font-size: 3vw;
+}
+.en footer p, .es footer p, .en header p, .es header p  {
+    font-size: 1vw;
+}
+.en figcaption, .es figcaption {
+    font-size: 1.2vw;
+}
+.en blockquote, .es blockquote {
+    font-size: 2.1vw;
+}
+.en sup, .es sup {
+    font-size: .8vw;
+}
+

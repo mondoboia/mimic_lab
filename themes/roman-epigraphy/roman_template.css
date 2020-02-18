@@ -80,10 +80,12 @@ h4 {
 header h1, header h2, header h3, header h4 {
     color: #D4AF37;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.67);
+    padding-top: 0;
 }
 
 header p {
     font-size: 1rem;
+    padding-bottom: 1.5rem;
 }
 
 footer p {
@@ -92,10 +94,6 @@ footer p {
 }
 
 div {
-    margin-bottom: 1.5rem;
-}
-
-div:not(header div, footer div) {
     margin-bottom: 1.5rem;
 }
 
@@ -148,6 +146,7 @@ blockquote {
     text-align: left;
     font-size: 2.2rem;
     margin: 1.5rem 0 1.5rem .8rem;
+    color: #E34239;
 }
 
 li {
@@ -164,20 +163,26 @@ ul {
 }
 
 hr {
-    margin: 1vw 0;
+    margin: 1rem 0;
 }
 
+sup, sub {
+    font-size: .8rem;
+}
 
 table {
-    width: 100%;
     border-collapse: collapse;
-    margin-bottom: 2vw;
+    margin: 1rem auto;
 }
-
+table td {
+    padding: .1vw;
+    text-align: center;
+}
 th, td {
     border: .1vw solid #727C85;
     text-align: center;
-    padding: .5vw .2vw;
+    font-size: .8vw;
+    padding: 1vw 0;
 }
 
 th {
@@ -185,44 +190,54 @@ th {
     color: #E34239;
 }
 
-sup, sub {
-    font-size: .8rem;
-}
 
 @media (max-width: 786px) {
+    body {
+        padding: 0.83rem;
+        margin: 1rem;
+    }
     article {
-        font-size: 0.9rem;
-        padding: 1.25rem;
+        font-size: 1.2rem;
+        padding: 1.66rem;
+    }
+    header {
+        padding: 1rem 1rem 0 1rem;
+        margin-bottom: 1rem;
+    }
+    div {
+        margin-bottom: 1rem;
     }
     h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     h2 {
-        font-size: 1.3rem;
+        font-size: 1.73rem;
     }
     h3 {
-        font-size: 1.2rem;
+        font-size: 1.46rem;
     }
     h4 {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
-    header p {
-        font-size: .5rem;
+    p, li, dl {
+        font-size: 1.2rem;
     }
-    footer p {
-        font-size: .5rem;
+    header p, footer p {
+        font-size: .66rem;
+    }
+    figure {
+        margin: 1rem;
     }
     figcaption {
-        font-size: .75rem;
+        font-size: .66rem;
+        padding-bottom: 1.33rem;
     }
     blockquote {
-        font-size: 1.1rem;
+        font-size: 1.46rem;
+        margin: 1rem 0 1rem 0.53rem;
     }
     sub, sup {
-        font-size: .4rem;
-    }
-    li {
-        font-size: 0.9rem;
+        font-size: .53rem;
     }
 }
 
@@ -237,42 +252,31 @@ sup, sub {
     width: 48%;
 }
 
-.en div, .es div {
-    font-size: 0.9em;
+.en p, .es p, .en li, .es li, .en dl, .es dl {
+    font-size: 1.8vw;
 }
 .en h1, .es h1  {
-    font-size: 1.5em;
+    font-size: 3vw;
 }
 .en h2, .es h2 {
-    font-size: 1.3em;
+    font-size: 2.6vw;
 }
 .en h3, .es h3 {
-    font-size: 1.2em;
+    font-size: 2.2vw;
 }
 .en h4, .es h4 {
-    font-size: 1em;
+    font-size: 1.8vw;
 }
-.en footer p, .es footer p {
-    font-size: 0.7rem;
-}
-.en header p, .es header p {
-    font-size: .7rem;
+.en footer p, .es footer p, .en header p, .es header p {
+    font-size: 1vw;
 }
 .en figcaption, .es figcaption {
-    font-size: .75rem;
+    font-size: 1vw;
 }
 .en blockquote, .es blockquote {
-    font-size: 1.1rem;
+    font-size: 2.2vw;
 }
 .en sup, .es sup {
-    font-size: .4rem;
-}
-
-.en li, .es li {
-    font-size: 0.9rem;
-}
-
-.en table, .es table {
-    font-size: 0.5rem;
+    font-size: .8vw;
 }
 

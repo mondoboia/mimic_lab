@@ -1,16 +1,44 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap');
 
 body {
     overflow-x: hidden;
     font-family: 'Raleway', sans-serif;
     /*color: to be defined;*/
+    margin: auto 0;
 }
+
+h1, h2, h3 {
+    font-family: 'Questrial', sans-serif;
+}
+
+h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
+}
+
 
 .offset:before {
     height: 3.8rem;
     margin-top: -4rem;
     content: "";
     display: block;
+}
+
+/*--- Documentation Modal --*/
+
+.modalDoc h5 {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1.2rem 0 1rem 0;
+}
+
+.modalDoc h6 {
+    text-transform: uppercase;
+}
+
+.modalDoc a {
+    text-decoration: none;
 }
 
 /*--- Navbar --*/
@@ -109,6 +137,10 @@ h3.heading {
     height: .2rem;
     background-color: #E34239;
     margin: 0 auto 2rem;
+}
+
+.modal-body p {
+    text-align: justify;
 }
 
 /*--- Portfolio --*/

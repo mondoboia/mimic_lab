@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Neucha&display=swap');
-body{background: url(color.jpg) no-repeat center top scroll;
+body { background: url(color.jpg) no-repeat center top scroll;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
@@ -556,4 +556,15 @@ p{width: 100%;
 		width: 100%;
 
 	}
+}
+
+.block {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+.en, .es {
+	width: 48%;
 }

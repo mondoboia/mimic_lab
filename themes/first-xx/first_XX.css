@@ -93,7 +93,7 @@ font-size: 30 px;
   padding-top:5px;
 }
 h3{font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
-font-size: 25 px;
+font-size: 25px;
 	margin-right: 100px;
 	margin-left: 100px;
 	margin-top:1px;
@@ -118,7 +118,7 @@ h4{
   margin-bottom: 1px;
   text-align: justify;
   flex-wrap:wrap;
-  font-style:underline;
+  font-style: underlined;
 }
 p{
   font-family: 'Righteous', cursive;
@@ -564,4 +564,15 @@ td{width: 25%;
 .parallax {
 background-attachment: scroll;
 }
+}
+
+.block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.en, .es {
+    width: 48%;
 }

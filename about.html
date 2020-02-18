@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Personal stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!--    <link rel="stylesheet" href="css/fixed.css">-->
+
+</head>
+
+<body data-spy="scroll" data-target="#navbarResponsive">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="index.html">PROJECT NAME</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="iframe_funzionante.html">Editor</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="documentation.html">Documentation</a>
+            </li>
+            <li class="nav-item">
+                <!-- Button trigger modal -->
+                <a class="nav-link" href="#" role="button" data-toggle="modal" data-target="#disclaimerModal">
+                    Disclaimer
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">Team</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!--- Start About Section -->
+<div id="about">
+    <div class="col-12 text-center">
+        <h3 class="heading">Team</h3>
+        <div class="heading-underline"></div>
+    </div>
+    <div class="row padding">
+        <div class="col-md-6">
+            <div class="card text-center">
+                <img class="card-img-top" src="images/me.jpg">
+                <div class="card-body">
+                    <h4>Giulia Renda</h4>
+                    <p>Etiam in felis interdum, rutrum arcu consequat, lacinia elit. Sed a imperdiet odio. Praesent hendrerit magna sit amet lobortis pretium. Aliquam erat volutpat. Sed pellentesque massa vel eros pellentesque fermentum. Cras risus enim, convallis vitae nunc a, eleifend tincidunt massa. Praesent posuere ornare dapibus. Aliquam vel blandit augue. Sed venenatis, lectus quis accumsan cursus, lacus dolor lacinia orci, eget molestie felis nunc et diam. Cras dapibus dictum augue. Integer sodales, erat nec dapibus dictum, ipsum orci cursus augue, at elementum tellus risus id arcu. Suspendisse erat nisi, convallis non semper eget, scelerisque id enim. Curabitur a lectus augue. Integer ut ante in ante dapibus tempor.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card text-center">
+                <img class="card-img-top" src="images/me.jpg">
+                <div class="card-body">
+                    <h4>Giulia Renda</h4>
+                    <p>Etiam in felis interdum, rutrum arcu consequat, lacinia elit. Sed a imperdiet odio. Praesent hendrerit magna sit amet lobortis pretium. Aliquam erat volutpat. Sed pellentesque massa vel eros pellentesque fermentum. Cras risus enim, convallis vitae nunc a, eleifend tincidunt massa. Praesent posuere ornare dapibus. Aliquam vel blandit augue. Sed venenatis, lectus quis accumsan cursus, lacus dolor lacinia orci, eget molestie felis nunc et diam. Cras dapibus dictum augue. Integer sodales, erat nec dapibus dictum, ipsum orci cursus augue, at elementum tellus risus id arcu. Suspendisse erat nisi, convallis non semper eget, scelerisque id enim. Curabitur a lectus augue. Integer ut ante in ante dapibus tempor.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Disclaimer Modal -->
+<div class="modal" id="disclaimerModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Disclaimer</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Modal body text goes here.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--- Start Contact Section -->
+<div id="contact" class="offset">
+    <footer>
+        <div class="row justify-content-center">
+
+            <div class="col-md-5 text-center">
+                <p>Vivamus mattis ut nisl sit amet rhoncus. Proin commodo at diam ut fermentum. Suspendisse molestie velit arcu, ut viverra elit tempus vel. Nulla facilisi. Nullam placerat arcu est, at lacinia quam efficitur in. Maecenas tempor molestie volutpat. Suspendisse sodales justo ipsum, consequat pulvinar felis consectetur ac. Integer lorem sapien, vulputate quis vestibulum vel, tempor ultrices ligula.</p>
+                <strong>Contact Details</strong>
+                <p>Università di Bologna<br>
+                    Via Zamboni 33<br>
+                    40126 Bologna, Italy</p>
+                <p>giulia.renda2@studio.unibo.it<br>giulia.renda2@studio.unibo.it</p>
+                <a href="https://www.facebook.com/DHDK.unibo/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            </div>
+
+            <hr class="socket">
+            &copy;Project Name.
+
+        </div> <!-- End of Row -->
+    </footer>
+</div>
+<!--- End Contact Section -->
+
+<!--- Script Source Files -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js"></script>
+<!--- End of Script Source Files -->
+
+</body>
+</html>

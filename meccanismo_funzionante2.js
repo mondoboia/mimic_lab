@@ -1,9 +1,15 @@
 var iframe = document.getElementById("myFrame");
+var selectedStyle;
+
+iframe.onload = function() {
+    if(selectedStyle) {
+        applyStyle(selectedStyle);
+    }
+};
 
 function displayArticle(file) {
-        iframe.src = file;
+    iframe.src = file;
 }
-
 
 function applyStyle(theme) {
     var head  = iframe.contentDocument.querySelector("head");
@@ -13,10 +19,8 @@ function applyStyle(theme) {
     link.href = '';
     link.id = 'activeStyle';
     $("#myFrame").contents().find("#activeStyle").remove();
+    
+    selectedStyle = theme;
 
     head.appendChild(link).href = theme;
 }
-
-
-
-

@@ -3,37 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <title>lab</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style>
-        iframe {
-            width: 100%;
-            height:700px;
+        body {
+            overflow-y: hidden;
+        }
+
+        #artnavbar {
+            justify-content: center;
         }
     </style>
-
+    <!-- Personal stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<p></p>
 
-<button type="button" onclick="displayArticle('articles/TheCut/JessicaPresler.html')">art1</button>
-<button type="button" onclick="displayArticle('articles/Harpers/ImaniPerry.html')">art2</button>
-<button type="button" onclick="displayArticle('articles/TimesLiterarySupplement/CarlMiller.html')">art3</button>
-<button type="button" onclick="displayArticle('articles/')">art4</button>
-<button type="button" onclick="displayArticle('articles/')">art5</button>
-<button type="button" onclick="displayArticle('articles/EUDirective/L125-75.html')">art6</button>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">PROJECT NAME</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="iframe_funzionante.html">Editor</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="documentation.html">Documentation</a>
+            </li>
+            <li class="nav-item">
+                <!-- Button trigger modal -->
+                <a class="nav-link" href="#" role="button" data-toggle="modal" data-target="#disclaimerModal">
+                    Disclaimer
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">Team</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
-<iframe id="myFrame" src="">
-</iframe>
+<div id="artnavbar" style="background-color: cadetblue">
+    <button type="button" onclick="displayArticle('articles/TheCut/JessicaPresler.html')">art1</button>
+    <button type="button" onclick="displayArticle('articles/Harpers/ImaniPerry.html')">art2</button>
+    <button type="button" onclick="displayArticle('articles/TimesLiterarySupplement/CarlMiller.html')">art3</button>
+    <button type="button" onclick="displayArticle('articles/')">art4</button>
+    <button type="button" onclick="displayArticle('articles/')">art5</button>
+    <button type="button" onclick="displayArticle('articles/EUDirective/L125-75.html')">art6</button>
+</div>
+
+    <iframe id="myFrame" src="" class="vw-100 vh-100">
+    </iframe>
+
+<div class="fixed-bottom" id="stylenavbar" style="background-color: red;">
+    <nav class="sticky-bottom">
+        <button type="button" onclick="applyStyle('../../themes/roman-epigraphy/roman_template.css')">css1</button>
+        <button type="button" onclick="applyStyle('../../themes/')">css2</button>
+        <button type="button" onclick="applyStyle('../../themes/keith-haring/keith_haring_template.css')">css3</button>
+        <button type="button" onclick="applyStyle('../../themes/')">css4</button>
+    </nav>
+</div>
 
 
-
-<button type="button" onclick="applyStyle('../../themes/roman-epigraphy/roman_template.css')">css1</button>
-<button type="button" onclick="applyStyle('../../themes/')">css2</button>
-<button type="button" onclick="applyStyle('../../themes/keith-haring/keith_haring_template.css')">css3</button>
-<button type="button" onclick="applyStyle('../../themes/')">css4</button>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="meccanismo_funzionante2.js"></script>
 
+<!--Scripts-->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 </body>
 </html>

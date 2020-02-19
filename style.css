@@ -223,6 +223,24 @@ hr.socket {
     }
 }
 
+@media (max-width: 575px) {
+    .carousel-caption h1 {
+        font-size: 1.5rem;
+        letter-spacing: .15rem;
+        padding-bottom: .5rem;
+    }
+    .carousel-caption h3 {
+        font-size: .8rem;
+        padding-bottom: .8rem;
+    }
+    .btn-lg {
+        font-size: .66rem;
+    }
+    .narrow h1 {
+        font-size: 1rem;
+    }
+}
+
 
 
 /*============ BOOTSTRAP BREAK POINTS:

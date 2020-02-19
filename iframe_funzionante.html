@@ -18,10 +18,6 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        body {
-            overflow-y: hidden;
-        }
-
         #artnavbar {
             justify-content: center;
             font-family: 'Monoton', cursive;
@@ -55,6 +51,7 @@
 <body>
 
 <!-- Navigation -->
+<div class="sticky-top">
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <a class="navbar-brand" href="index.html">PROJECT NAME</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
@@ -84,27 +81,33 @@
     </div>
 </nav>
 
-<div id="artnavbar" style="background-color: rgb(228, 241, 241); padding: 3px">
+<div  style="background-color: rgb(228, 241, 241); padding: 3px">
+    <div id="artnavbar" class="float-left">
     <button type="button" class="btn btn-outline-dark" onclick="displayArticle('articles/TheCut/JessicaPresler.html')">ART1</button>
     <button type="button" class="btn btn-outline-dark" onclick="displayArticle('articles/Harpers/ImaniPerry.html')">ART2</button>
     <button type="button" class="btn btn-outline-dark" onclick="displayArticle('articles/TimesLiterarySupplement/CarlMiller.html')">ART3</button>
     <button type="button" class="btn btn-outline-dark" onclick="displayArticle('articles/Bloomberg/ShinoFukada.html')">ART4</button>
     <button type="button" class="btn btn-outline-dark" onclick="displayArticle('articles/HuffingtonPost/JasonFagone.html')">ART5</button>
     <button type="button" class="btn btn-outline-dark" onclick="displayArticle('articles/EUDirective/L125-75.html')">ART6</button>
+    </div>
+    <div class="float-right" id="stylenavbar">
+        <button type="button" id="1" class="btn btn-dark btn-lg" onclick="applyStyle('../../themes/roman-epigraphy/roman_template.css')"><i class="material-icons md-light">museum</i><span class="Epigraphy">Epigraphy</span></button>
+
+        <button type="button" id="2" class="btn btn-dark btn-lg" onclick="applyStyle('../../themes/first-xx/first_XX.css')"><i class="material-icons md-light">category</i><span class="Bauhaus">Bauhaus</span></button>
+
+        <button type="button" id="3" class="btn btn-dark btn-lg" onclick="applyStyle('../../themes/keith-haring/keith_haring_template.css')"><i class="material-icons md-light">emoji_people</i><span class="Artist">Keith Haring</span></button>
+
+        <button type="button" id="4" class="btn btn-dark btn-lg" onclick="applyStyle('../../themes/futuristic/futurist.css')"><i class="material-icons md-light">grain</i><span class="Future">Future</span></button>
+    </div>
+</div>
 </div>
 
     <iframe id="myFrame" src="" class="vw-100 vh-100">
     </iframe>
 
-<div class="fixed-bottom" id="stylenavbar" style="background-color: rgb(241, 228, 219); padding: 3px">
+<div class="fixed-bottom"  style="background-color: rgb(241, 228, 219); padding: 3px">
     <nav class="sticky-bottom">
-        <button type="button" id="1" class="btn btn-dark btn-lg" onclick="applyStyle('../../themes/roman-epigraphy/roman_template.css')"><i class="material-icons md-light">museum</i><span class="Epigraphy">Epigraphy</span></button>
-        
-        <button type="button" id="2" class="btn btn-dark btn-lg" onclick="applyStyle('../../themes/first-xx/first_XX.css')"><i class="material-icons md-light">category</i><span class="Bauhaus">Bauhaus</span></button>
-        
-        <button type="button" id="3" class="btn btn-dark btn-lg" onclick="applyStyle('../../themes/keith-haring/keith_haring_template.css')"><i class="material-icons md-light">emoji_people</i><span class="Artist">Keith Haring</span></button>
-        
-        <button type="button" id="4" class="btn btn-dark btn-lg" onclick="applyStyle('../../themes/futuristic/futurist.css')"><i class="material-icons md-light">grain</i><span class="Future">Future</span></button>
+
         
     </nav>
 </div>
@@ -131,15 +134,14 @@
                     complexity among the best picks of 2018 of www.longreads.com. Their
                     publication here is not intended to be an alternative or replace their original
                     locations:
-                <ul>
-                    <li> Fagone, Jason. "Jerry and Marge Go Large". The Huffington Post: <a href="https://highline.huffingtonpost.com/articles/en/lotto-winners/" target="_blank">https://highline.huffingtonpost.com/articles/en/lotto-winners/</a></li>
-                    <li> Fukada, Shiho. "Japan's Prisons Are a Haven for Elderly Women". Bloomberg, 16th March 2018:<a href="https://www.bloomberg.com/news/features/2018-03-16/japan-s-prisons-are-a-haven-for-elderly-women" target="_blank">https://www.bloomberg.com/news/features/2018-03-16/japan-s-prisons-are-a-haven-for-elderly-women</a></li>
-                    <li> Miller, Carl. "God is in the machine". Times Literary Supplement: <a href="https://www.the-tls.co.uk/articles/ridiculously-complicated-algorithms/" target="_blank">https://www.the-tls.co.uk/articles/ridiculously-complicated-algorithms/</a></li>
-                    <li> Perry, Imani. "As Goes the South, so Goes the Nation". Harpers, July 2018: <a href="https://harpers.org/archive/2018/07/as-goes-the-south-so-goes-the-nation/" target="_blank">https://harpers.org/archive/2018/07/as-goes-the-south-so-goes-the-nation/</a></li>
+                <ol>
                     <li> Pressler, Jessica. "Maybe She Had So Much Money She Just Lost Track of It". The Cut, 28th May 2018: <a href=" https://www.thecut.com/2018/05/how-anna-delvey-tricked-new-york.html" target="_blank"> https://www.thecut.com/2018/05/how-anna-delvey-tricked-new-york.html</a></li>
+                    <li> Perry, Imani. "As Goes the South, so Goes the Nation". Harpers, July 2018: <a href="https://harpers.org/archive/2018/07/as-goes-the-south-so-goes-the-nation/" target="_blank">https://harpers.org/archive/2018/07/as-goes-the-south-so-goes-the-nation/</a></li>
+                    <li> Miller, Carl. "God is in the machine". Times Literary Supplement: <a href="https://www.the-tls.co.uk/articles/ridiculously-complicated-algorithms/" target="_blank">https://www.the-tls.co.uk/articles/ridiculously-complicated-algorithms/</a></li>
+                    <li> Fukada, Shiho. "Japan's Prisons Are a Haven for Elderly Women". Bloomberg, 16th March 2018:<a href="https://www.bloomberg.com/news/features/2018-03-16/japan-s-prisons-are-a-haven-for-elderly-women" target="_blank">https://www.bloomberg.com/news/features/2018-03-16/japan-s-prisons-are-a-haven-for-elderly-women</a></li>
+                    <li> Fagone, Jason. "Jerry and Marge Go Large". The Huffington Post: <a href="https://highline.huffingtonpost.com/articles/en/lotto-winners/" target="_blank">https://highline.huffingtonpost.com/articles/en/lotto-winners/</a></li>
                     <li> "L 125/75, DIRECTIVE 2009/41/EC OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 6 May 2009 on the contained use of genetically modified micro-organisms": <a href=" https://eur-lex.europa.eu/legal-content/it/TXT/?uri=CELEX:32009L0041" target="_blank"> https://eur-lex.europa.eu/legal-content/it/TXT/?uri=CELEX:32009L0041</a></li>
-
-                </ul>
+                </ol>
                 <p>
                     All copyrights and related rights on the content remain with their original owners.
                     All copyright on the typographic and layout choices are 2019 © XY

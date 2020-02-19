@@ -1,28 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Name of the project</title>
-    <!-- Bootstrap CSS -->
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emulator</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Neucha&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=La+Belle+Aurore&display=swap" rel="stylesheet">
     <!-- Personal stylesheet -->
     <link rel="stylesheet" href="style.css">
-    <!--    <link rel="stylesheet" href="css/fixed.css">-->
+
     <style>
-        .navbar {
-            background-color: rgba(0, 0, 0, .6)!important;
+        #artnavbar {
+            justify-content: center;
+            font-family: 'Monoton', cursive;
+        }
+
+        .material-icons.md-light {
+            color: rgba(255, 255, 255, 1);
+        }
+        .Epigraphy{
+            font-family: 'Cinzel', cursive;
+            color: antiquewhite;
+
+        }
+        .Bauhaus{
+            font-family: 'Righteous', cursive;
+            color: antiquewhite;
+
+        }
+        .Artist{
+            font-family: 'Neucha', cursive;
+            color: antiquewhite;
+
+        }
+        .Future{
+            font-family: 'La Belle Aurore', cursive;
+            color: antiquewhite;
+
         }
     </style>
 </head>
+<body>
 
-<body data-spy="scroll" data-target="#navbarResponsive">
-
-<!--- Start Home Section -->
-<div id="home">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+<!-- Navigation -->
+<div class="sticky-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <a class="navbar-brand" href="index.html">PROJECT NAME</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
             <span class="navbar-toggler-icon"></span>
@@ -30,10 +59,10 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Home</a>
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="emulator.html">Emulator</a>
+                    <a class="nav-link active" href="emulator.html">Emulator</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="documentation.html">Documentation</a>
@@ -51,49 +80,29 @@
         </div>
     </nav>
 
-    <!-- Start Image Slider -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="d-block w-100" src="images/img1.jpg" alt="First slide">
-                <div class="carousel-caption text-center">
-                    <h1>Welcome to PROJECT NAME</h1>
-                    <h3>Subtitle</h3>
-                    <a class="btn btn-outline-light btn-lg" href="#overview">Discover</a>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="images/img2.jpg" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="images/img3.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="images/img4.jpg" alt="Fourth slide">
-            </div>
-        </div> <!-- End Carousel Inner -->
-    </div>
-    <!-- End Image Slider -->
+    <div  style="background-color: rgb(228, 241, 241); padding: 3px">
+        <div id="artnavbar" class="float-left">
+            <button type="button" class="btn btn-outline-dark" onclick="displayArticle('articles/TheCut/JessicaPresler.html')">ART1</button>
+            <button type="button" class="btn btn-outline-dark" onclick="displayArticle('articles/Harpers/ImaniPerry.html')">ART2</button>
+            <button type="button" class="btn btn-outline-dark" onclick="displayArticle('articles/TimesLiterarySupplement/CarlMiller.html')">ART3</button>
+            <button type="button" class="btn btn-outline-dark" onclick="displayArticle('articles/Bloomberg/ShinoFukada.html')">ART4</button>
+            <button type="button" class="btn btn-outline-dark" onclick="displayArticle('articles/HuffingtonPost/JasonFagone.html')">ART5</button>
+            <button type="button" class="btn btn-outline-dark" onclick="displayArticle('articles/EUDirective/L125-75.html')">ART6</button>
+        </div>
+        <div class="float-right" id="stylenavbar">
+            <button type="button" id="1" class="btn btn-dark btn-lg" onclick="applyStyle('../../themes/roman-epigraphy/roman_template.css')"><i class="material-icons md-light">museum</i><span class="Epigraphy">Epigraphy</span></button>
 
-</div>
-<!--- End Home Section -->
+            <button type="button" id="2" class="btn btn-dark btn-lg" onclick="applyStyle('../../themes/first-xx/first_XX.css')"><i class="material-icons md-light">category</i><span class="Bauhaus">Bauhaus</span></button>
 
-<!--- Start Overview Section -->
-<div id="overview" class="offset">
-    <div class="col-12 narrow text-center">
-        <h1>Testo</h1>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac nunc molestie, malesuada nibh quis, faucibus diam.</p>
-        <p>Sed et cursus odio, bibendum condimentum sem. Pellentesque semper vehicula massa, et elementum magna fermentum sit amet. Proin urna sem, aliquet quis tempus eget, pulvinar quis sem. Aliquam aliquam vestibulum ultrices. Aenean rutrum lacus vel nunc efficitur, congue sollicitudin metus consequat. Pellentesque nec ornare justo. Aliquam nec egestas ipsum. Suspendisse aliquet scelerisque condimentum.</p>
-        <a class="btn btn-secondary btn-md" href="iframe_funzionante.html">Try it</a>
+            <button type="button" id="3" class="btn btn-dark btn-lg" onclick="applyStyle('../../themes/keith-haring/keith_haring_template.css')"><i class="material-icons md-light">emoji_people</i><span class="Artist">Keith Haring</span></button>
+
+            <button type="button" id="4" class="btn btn-dark btn-lg" onclick="applyStyle('../../themes/futuristic/futurist.css')"><i class="material-icons md-light">grain</i><span class="Future">Future</span></button>
+        </div>
     </div>
 </div>
-<!--- End Overview Section -->
+
+<iframe id="myFrame" src="" class="vw-100 vh-100">
+</iframe>
 
 <!-- Disclaimer Modal -->
 <div class="modal" id="disclaimerModal">
@@ -134,36 +143,14 @@
     </div>
 </div>
 
-<!--- Start Contact Section -->
-<div class="offset">
-    <footer>
-        <div class="row justify-content-center bg-dark pt-1">
 
-            <div class="col-md-5 text-center">
-                <p><strong>Contact Details</strong></p>
-                <p>Università di Bologna<br>
-                    Via Zamboni 33<br>
-                    40126 Bologna, Italy</p>
-                <p>giulia.renda2@studio.unibo.it<br>giulia.renda2@studio.unibo.it</p>
-                <a href="https://www.facebook.com/DHDK.unibo/" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                <a href="" target="_blank"><i class="fab fa-twitter-square"></i></a>
-            </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="emulatorScript.js"></script>
 
-            <hr class="socket">
-            <p>&copy;Project Name.</p>
-
-        </div> <!-- End of Row -->
-    </footer>
-</div>
-<!--- End Contact Section -->
-
-
-<!--- Script Source Files -->
+<!--Scripts-->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js"></script>
-<!--- End of Script Source Files -->
 
 </body>
 </html>

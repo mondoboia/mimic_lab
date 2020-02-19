@@ -72,7 +72,7 @@ h4, h5, h6 {
 /*--- Slider --*/
 
 .carousel-item {
-    height: 100vh;
+    height: auto;
 }
 
 .carousel-caption {

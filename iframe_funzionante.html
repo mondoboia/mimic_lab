@@ -2,8 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta charset="UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lab</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Neucha&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+    <!-- Personal stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
     <style>
         body {
             overflow-y: hidden;
@@ -11,10 +24,33 @@
 
         #artnavbar {
             justify-content: center;
+            font-family: 'Monoton', cursive;
+        }
+        
+        .material-icons.md-light { 
+            color: rgba(255, 255, 255, 1); 
+        }
+        .Epigraphy{
+            font-family: 'Cinzel', cursive;
+            color: antiquewhite;
+
+        }
+        .Bauhaus{
+            font-family: 'Righteous', cursive;
+            color: antiquewhite;
+
+        }
+        .Artist{
+            font-family: 'Neucha', cursive;
+            color: antiquewhite;
+
+        }
+        .Future{
+            font-family: 'La Belle Aurore', cursive;
+            color: antiquewhite;
+
         }
     </style>
-    <!-- Personal stylesheet -->
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -30,7 +66,7 @@
                 <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="iframe_funzionante.html">Editor</a>
+                <a class="nav-link active" href="iframe_funzionante.html">Editor</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="documentation.html">Documentation</a>
@@ -44,34 +80,74 @@
             <li class="nav-item">
                 <a class="nav-link" href="about.html">Team</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-            </li>
         </ul>
     </div>
 </nav>
 
-<div id="artnavbar" style="background-color: cadetblue">
-    <button type="button" onclick="displayArticle('articles/TheCut/JessicaPresler.html')">art1</button>
-    <button type="button" onclick="displayArticle('articles/Harpers/ImaniPerry.html')">art2</button>
-    <button type="button" onclick="displayArticle('articles/TimesLiterarySupplement/CarlMiller.html')">art3</button>
-    <button type="button" onclick="displayArticle('articles/Bloomberg/ShinoFukada.html')">art4</button>
-    <button type="button" onclick="displayArticle('articles/HuffingtonPost/JasonFagone.html')">art5</button>
-    <button type="button" onclick="displayArticle('articles/EUDirective/L125-75.html')">art6</button>
+<div id="artnavbar" style="background-color: rgb(228, 241, 241); padding: 3px">
+    <button type="button" class="btn btn-outline-dark" onclick="displayArticle('articles/TheCut/JessicaPresler.html')">ART1</button>
+    <button type="button" class="btn btn-outline-dark" onclick="displayArticle('articles/Harpers/ImaniPerry.html')">ART2</button>
+    <button type="button" class="btn btn-outline-dark" onclick="displayArticle('articles/TimesLiterarySupplement/CarlMiller.html')">ART3</button>
+    <button type="button" class="btn btn-outline-dark" onclick="displayArticle('articles/Bloomberg/ShinoFukada.html')">ART4</button>
+    <button type="button" class="btn btn-outline-dark" onclick="displayArticle('articles/HuffingtonPost/JasonFagone.html')">ART5</button>
+    <button type="button" class="btn btn-outline-dark" onclick="displayArticle('articles/EUDirective/L125-75.html')">ART6</button>
 </div>
 
     <iframe id="myFrame" src="" class="vw-100 vh-100">
     </iframe>
 
-<div class="fixed-bottom" id="stylenavbar" style="background-color: red;">
+<div class="fixed-bottom" id="stylenavbar" style="background-color: rgb(241, 228, 219); padding: 3px">
     <nav class="sticky-bottom">
-        <button type="button" onclick="applyStyle('../../themes/roman-epigraphy/roman_template.css')">css1</button>
-        <button type="button" onclick="applyStyle('../../themes/first-xx/first_XX.css')">css2</button>
-        <button type="button" onclick="applyStyle('../../themes/keith-haring/keith_haring_template.css')">css3</button>
-        <button type="button" onclick="applyStyle('../../themes/futuristic/futurist.css')">css4</button>
+        <button type="button" id="1" class="btn btn-dark btn-lg" onclick="applyStyle('../../themes/roman-epigraphy/roman_template.css')"><i class="material-icons md-light">museum</i><span class="Epigraphy">Epigraphy</span></button>
+        
+        <button type="button" id="2" class="btn btn-dark btn-lg" onclick="applyStyle('../../themes/first-xx/first_XX.css')"><i class="material-icons md-light">category</i><span class="Bauhaus">Bauhaus</span></button>
+        
+        <button type="button" id="3" class="btn btn-dark btn-lg" onclick="applyStyle('../../themes/keith-haring/keith_haring_template.css')"><i class="material-icons md-light">emoji_people</i><span class="Artist">Keith Haring</span></button>
+        
+        <button type="button" id="4" class="btn btn-dark btn-lg" onclick="applyStyle('../../themes/futuristic/futurist.css')"><i class="material-icons md-light">grain</i><span class="Future">Future</span></button>
+        
     </nav>
 </div>
 
+<!-- Disclaimer Modal -->
+<div class="modal" id="disclaimerModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Disclaimer</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>The purpose of this web site is to explore various types of typographic and layout
+                    style for text documents, as an end-of-course project for the "Information
+                    Modeling and Web technologies" course of the Master Degree in Digital
+                    Humanities and Digital Knowledge of the University of Bologna, under prof. Fabio
+                    Vitali.
+                </p>
+                <p>
+                    The documents contained in this web site have been selected for their length and
+                    complexity among the best picks of 2018 of www.longreads.com. Their
+                    publication here is not intended to be an alternative or replace their original
+                    locations:
+                <ul>
+                    <li> Fagone, Jason. "Jerry and Marge Go Large". The Huffington Post: <a href="https://highline.huffingtonpost.com/articles/en/lotto-winners/" target="_blank">https://highline.huffingtonpost.com/articles/en/lotto-winners/</a></li>
+                    <li> Fukada, Shiho. "Japan's Prisons Are a Haven for Elderly Women". Bloomberg, 16th March 2018:<a href="https://www.bloomberg.com/news/features/2018-03-16/japan-s-prisons-are-a-haven-for-elderly-women" target="_blank">https://www.bloomberg.com/news/features/2018-03-16/japan-s-prisons-are-a-haven-for-elderly-women</a></li>
+                    <li> Miller, Carl. "God is in the machine". Times Literary Supplement: <a href="https://www.the-tls.co.uk/articles/ridiculously-complicated-algorithms/" target="_blank">https://www.the-tls.co.uk/articles/ridiculously-complicated-algorithms/</a></li>
+                    <li> Perry, Imani. "As Goes the South, so Goes the Nation". Harpers, July 2018: <a href="https://harpers.org/archive/2018/07/as-goes-the-south-so-goes-the-nation/" target="_blank">https://harpers.org/archive/2018/07/as-goes-the-south-so-goes-the-nation/</a></li>
+                    <li> Pressler, Jessica. "Maybe She Had So Much Money She Just Lost Track of It". The Cut, 28th May 2018: <a href=" https://www.thecut.com/2018/05/how-anna-delvey-tricked-new-york.html" target="_blank"> https://www.thecut.com/2018/05/how-anna-delvey-tricked-new-york.html</a></li>
+                    <li> "L 125/75, DIRECTIVE 2009/41/EC OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 6 May 2009 on the contained use of genetically modified micro-organisms": <a href=" https://eur-lex.europa.eu/legal-content/it/TXT/?uri=CELEX:32009L0041" target="_blank"> https://eur-lex.europa.eu/legal-content/it/TXT/?uri=CELEX:32009L0041</a></li>
+
+                </ul>
+                <p>
+                    All copyrights and related rights on the content remain with their original owners.
+                    All copyright on the typographic and layout choices are 2019 © XY
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

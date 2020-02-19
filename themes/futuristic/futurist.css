@@ -7,26 +7,20 @@ body { background: url(color.jpg) no-repeat center top scroll;
 	justify-content: center;
 	background-position: center center;
 	display: inline-block;
-	width: 100%;
 	font-size: 0;
 	line-height: 0;
 	background-origin: content-box;
-	font-family: 'Neucha', cursive;
-	display: block;
-	
+	font-family: 'Neucha', cursive;	
 	height:700px;
-	
 	overflow: auto;
 	-ms-overflow-style: auto;
 	marquee-style: scroll;
 	marquee-play-count: 1;
 	marquee-direction: forward;
 	marquee-speed: normal;
-
-	width: 50%;
+	width: 100%;
 }
-article{display: flex;
-	flex-direction: row;
+article{
 	background-color:rgba(158, 38, 38, 0.7);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -36,18 +30,16 @@ article{display: flex;
 	border-radius: 50px;
 	background-size: cover;
 	display: inline-block;
-	width: 100%;
 	font-size: 0;
 	line-height: 0;
-	flex-wrap:wrap;
-	flex-flow: center;
-	margin-top:50px;
+	
+	margin-top:100px;
 	margin-bottom: 10px;
-	margin-left:200px;
-	margin-right:50px;
+	margin-left:25%;
+	margin-right:100px;
 	padding: 10px;
-	width: 800px;  /* Or whatever */
-	height: 300px;
+	width: 50%;  /* Or whatever */
+	height: 50%;
 	justify-content: center;
 	align-items: center;
 	align-content: center;
@@ -78,10 +70,7 @@ article:after {
 	width: 100%;
 	font-size: 0;
 	line-height: 0;
-	flex-wrap:wrap;
-	flex-flow:center;
 	position:absolute;
-	transform: translateXY(20px,40px);
 	animation-name: example;
   animation-duration: 10s;
 }
@@ -96,10 +85,7 @@ img{display:block;
 	border: 5px solid #ddd;
 	border-radius: 50px;
 	padding: 5px;
-	width: 300px;
-	align-self:flex-start;
-	margin-right: 50px;
-	margin-left: 50px;
+	width: 50%;
 	opacity: 0.9;
 	filter: alpha(opacity=50);
 	display: block;
@@ -126,6 +112,9 @@ p{color: rgb(255, 255, 255);
 	text-align: justify;
 	white-space:pre-wrap;
 	line-height: 2;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
 }
 blockquote{color: rgb(255, 255, 255);
 	font-family: 'Neucha', cursive;
@@ -134,6 +123,9 @@ blockquote{color: rgb(255, 255, 255);
 	text-align: justify;
 	white-space:pre-wrap;
 	line-height: 2;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
 }
 
 table{color:	rgb(255, 179, 179);
@@ -150,6 +142,9 @@ footer{color:	rgb(255, 255, 255);
 	font-size: 15px;
 	padding:10px;
 	font-family: 'Neucha', cursive;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
 }
 a:link {
 	color: rgb(255, 204, 204);
@@ -178,7 +173,10 @@ h1{color:	rgb(255, 255, 255);
 	text-align: center;
 	margin: 10px;
 	line-height: 2;
-	font-family: 'Neucha', cursive;}
+	font-family: 'Neucha', cursive;
+	justify-content: center;
+	align-items: center;
+	align-content: center;}
 
 h2{ color:rgb(255, 245, 245);
 	font-size:20px;
@@ -189,6 +187,9 @@ h2{ color:rgb(255, 245, 245);
 	margin: 10px;
 	line-height: 1.8;
 	font-family: 'Neucha', cursive;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
 }
 
 h3{ color:rgb(255,230, 230);
@@ -223,6 +224,9 @@ figcaption{color:	rgb(255, 255, 255);
 	white-space:pre-wrap;
 	line-height: 1.8;
 	font-family: 'Neucha', cursive;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
 }
 caption{color:	rgb(255, 255, 255);
 	font-size: 15px;
@@ -233,6 +237,9 @@ caption{color:	rgb(255, 255, 255);
 	white-space:pre-wrap;
 	display:block;
 	font-family: 'Neucha', cursive;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
 }
 tr{color:	rgb(255, 255, 255);
 	font-size: 15px;
@@ -280,18 +287,18 @@ table{color: rgb(255, 255, 255);
 		width: 25%;
 		background-image: none !important;
 		background-color: black;
-		background-size:  290px 183px;
+		background-size:970px 650px;
 		justify-content: center;
 		background-position: center center;
 
 	}
-	.article:after{
+	.article{
 		width: 25%;
 		justify-content: center;
-		width: 250px;
 		background-size: 290px 183px;
+		margin-left:50px;
 	}
-	p{width: 25%;
+	p{
 		font-size: 5px;
 	}
 	img{width: 25%;
@@ -299,7 +306,6 @@ table{color: rgb(255, 255, 255);
 		border: 1px solid #ddd;
 		border-radius: 10px;
 		padding: 3px;
-		width: 100px;
 	}
 	h1{width: 50%;
 		min-height: 40px;
@@ -368,7 +374,7 @@ table{color: rgb(255, 255, 255);
 		width:50%;
 		background-image: none !important;
 		background-color: black;
-		background-size:  538px 341px;
+		background-size:970px 650px;
 		justify-content: center;
 		background-position: center center;
 
@@ -376,10 +382,11 @@ table{color: rgb(255, 255, 255);
 	.article{
 		width: 50%;
 		background-position: left;
-		width: 350px;
 		background-size: 290px 183px;
+		margin-left:50px;
+
 	}
-	p{width: 50%;
+	p{
 		min-height: 140px;
 		font-size: 10px;
 	}
@@ -388,29 +395,28 @@ table{color: rgb(255, 255, 255);
 		border: 2px solid #ddd;
 		border-radius: 25px;
 		padding: 4px;
-		width: 150px;
+	
 	}
-	h1{width: 50%;
+	h1{
 		min-height: 40px;
 		font-size: 15px;
 	}
-	h2{width: 50%;
+	h2{
 		min-height: 60px;
 		font-size: 13px;
 
 	}
-	h3{width: 50%;
+	h3{
 		min-height: 50px;
 		font-size: 11.5px;
 	}
 	blockquote
-	{width: 50%;
+	{
 		min-height: 100px;
 		font-size: 9px;
 	}
 	footer{
-		width: 50%;
-		min-height: 100px;
+		
 		font-size: 7px;
 	}
 
@@ -429,12 +435,12 @@ table{color: rgb(255, 255, 255);
 
 	}
 	figcaption{
-		width: 50%;
+		
 
 		font-size: 9px;
 	}
 	caption{
-		width: 50%;
+	
 		min-height: 100px;
 		font-size: 9px;
 
@@ -460,15 +466,16 @@ table{color: rgb(255, 255, 255);
 	.body{
 		width:75%;
 		background-position: center center;
-		background-size:970px 614px;
 		justify-content: center;
 		background-position: center center;
 	}
 	.article{
 		width:75%;
 		justify-content: center;
-		background-position: left;
-		background-size: cover;}
+		background-size: cover;
+		margin-left:50px;
+		width: 500px;}
+
 	p{width: 75%;
 		min-height: 140px;
 		font-size: 10px;
@@ -478,7 +485,7 @@ table{color: rgb(255, 255, 255);
 		border: 4px solid #ddd;
 		border-radius: 40px;
 		padding: 4px;
-		width: 250px;
+
 	}
 	h1{width: 75%;
 		min-height: 40px;
@@ -546,6 +553,8 @@ table{color: rgb(255, 255, 255);
 		width:100%;
 		justify-content: center;
 		background-position: left;
+		margin-left:50px;
+
 	}
 	p{width: 100%;
 

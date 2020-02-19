@@ -43,7 +43,9 @@
         .Future{
             font-family: 'La Belle Aurore', cursive;
             color: antiquewhite;
-
+        }
+        .size {
+            font-size: 1.5rem;
         }
     </style>
 </head>
@@ -52,7 +54,7 @@
 <!-- Navigation -->
 <div class="sticky-top">
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html">PROJECT NAME</a>
+        <a class="navbar-brand" href="index.html" id="color">MIMIC_LAB</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -80,8 +82,8 @@
         </div>
     </nav>
 
-    <div  style="background-color: rgb(228, 241, 241); padding-top: 5px; padding-bottom:55px;">
-        <div id="artnavbar" class="float-left">
+    <div class="d-flex align-items-center justify-content-sm-between flex-wrap" style="background: linear-gradient(90deg, rgba(177,126,232,1) 0%, rgba(210,173,250,1) 37%, rgba(228,209,249,1) 100%);">
+        <div class="float-left size ml-1" id="artnavbar">
             <button type="button" class="btn btn-outline-dark" onclick="displayArticle('articles/TheCut/JessicaPresler.html')">ART1</button>
             <button type="button" class="btn btn-outline-dark" onclick="displayArticle('articles/Harpers/ImaniPerry.html')">ART2</button>
             <button type="button" class="btn btn-outline-dark" onclick="displayArticle('articles/TimesLiterarySupplement/CarlMiller.html')">ART3</button>
@@ -89,11 +91,11 @@
             <button type="button" class="btn btn-outline-dark" onclick="displayArticle('articles/HuffingtonPost/JasonFagone.html')">ART5</button>
             <button type="button" class="btn btn-outline-dark" onclick="displayArticle('articles/EUDirective/L125-75.html')">ART6</button>
         </div>
-        <div class="float-right" id="stylenavbar">
-            <button type="button" id="1" class="btn btn-dark btn-lg" onclick="applyStyle('../../themes/roman-epigraphy/roman_template.css')"><i class="material-icons md-light">museum</i><span class="Epigraphy">Epigraphy</span></button>
-            <button type="button" id="2" class="btn btn-dark btn-lg" onclick="applyStyle('../../themes/first-xx/first_XX.css')"><i class="material-icons md-light">category</i><span class="Bauhaus">Bauhaus</span></button>
-            <button type="button" id="3" class="btn btn-dark btn-lg" onclick="applyStyle('../../themes/keith-haring/keith_haring_template.css')"><i class="material-icons md-light">emoji_people</i><span class="Artist">Keith Haring</span></button>
-            <button type="button" id="4" class="btn btn-dark btn-lg" onclick="applyStyle('../../themes/futuristic/futurist.css')"><i class="material-icons md-light">grain</i><span class="Future">Future</span></button>
+        <div class="float-right size mr-1">
+            <button type="button" class="btn btn-dark btn-sm" onclick="applyStyle('../../themes/roman-epigraphy/roman_template.css')"><i class="material-icons md-light">museum</i><span class="Epigraphy">Epigraphy</span></button>
+            <button type="button" class="btn btn-dark btn-sm" onclick="applyStyle('../../themes/first-xx/first_XX.css')"><i class="material-icons md-light">category</i><span class="Bauhaus">Bauhaus</span></button>
+            <button type="button" class="btn btn-dark btn-sm" onclick="applyStyle('../../themes/keith-haring/keith_haring_template.css')"><i class="material-icons md-light">emoji_people</i><span class="Artist">Keith Haring</span></button>
+            <button type="button" class="btn btn-dark btn-sm" onclick="applyStyle('../../themes/futuristic/futurist.css')"><i class="material-icons md-light">grain</i><span class="Future">Future</span></button>
         </div>
     </div>
 </div>

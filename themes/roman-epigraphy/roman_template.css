@@ -43,6 +43,15 @@ header {
     margin-bottom: 1.5rem;
 }
 
+section {
+    margin-bottom: 1.5rem;
+}
+
+header section {
+    padding: 0;
+    margin: 0;
+}
+
 p {
     font-size: 1.8rem;
     margin: 0;
@@ -92,11 +101,6 @@ footer p {
     font-size: 1rem;
     text-align: center;
 }
-
-div {
-    margin-bottom: 1.5rem;
-}
-
 
 figure {
     align-content: center;
@@ -204,7 +208,7 @@ th {
         padding: 1rem 1rem 0 1rem;
         margin-bottom: 1rem;
     }
-    div {
+    section {
         margin-bottom: 1rem;
     }
     h1 {

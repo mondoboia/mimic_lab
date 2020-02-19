@@ -13,22 +13,16 @@ body { background: url(color.jpg) no-repeat center top scroll;
 	background-origin: content-box;
 	font-family: 'Neucha', cursive;
 	display: block;
-	margin:5px;
-	background-color: #FFFFFF;
+	
 	height:700px;
-	border-width:5px;
-	padding-top: 10px;
-	padding-right: 10px;
-	padding-bottom: 10px;
-	padding-left: 10px;
+	
 	overflow: auto;
 	-ms-overflow-style: auto;
 	marquee-style: scroll;
 	marquee-play-count: 1;
 	marquee-direction: forward;
 	marquee-speed: normal;
-	margin-left: auto;
-	margin-right: auto;
+
 	width: 50%;
 }
 article{display: flex;
@@ -322,12 +316,12 @@ table{color: rgb(255, 255, 255);
 		min-height: 100px;
 	}
 	tr{width: 50%;
-		font-size: 10px;
+		font-size: 5px;
 	}
 	th{width: 50%;
 		font-size: 10px;}
 	td{width: 50%;
-		font-size: 10px;
+		font-size: 5px;
 	}
 	ul{
 		width: 50%;
@@ -347,9 +341,9 @@ table{color: rgb(255, 255, 255);
 		background-position: center center;
 
 	}
-	.article:after {
+	.article{
 		width: 50%;
-		background-position: center center;
+		background-position: left;
 		width: 350px;
 		background-size: 290px 183px;
 	}
@@ -415,14 +409,13 @@ table{color: rgb(255, 255, 255);
 	}
 	table{
 		width: 50%;
-		min-height: 100px;
 	}
 	tr{width: 50%;
-		font-size: 10px;
+		font-size: 5px;
 	}
 
 	td{width: 50%;
-		font-size: 10px;
+		font-size: 5px;
 	}
 	ul{
 		width: 50%;
@@ -442,8 +435,8 @@ table{color: rgb(255, 255, 255);
 	.article{
 		width:75%;
 		justify-content: center;
-		background-position: center center;
-		background-size: contain;}
+		background-position: left;
+		background-size: cover;}
 	p{width: 75%;
 		min-height: 140px;
 		font-size: 10px;
@@ -515,12 +508,12 @@ table{color: rgb(255, 255, 255);
 	.body{
 		width:100%;
 		background-position: center center;
-		background-size: 1940px 1229px;
+		background-size: cover;
 	}
 	.article{
 		width:100%;
 		justify-content: center;
-		background-position: center center;
+		background-position: left;
 	}
 	p{width: 100%;
 
@@ -570,30 +563,3 @@ table{color: rgb(255, 255, 255);
 	justify-content: space-between;
 }
 
-.en, .es {
-	width: 48%;
-}
-.en p, .es p, .en li, .es li, .en dl, .es dl {
-    font-size: 2vw;
-}
-.en h1, .es h1  {
-    font-size: 5vw;
-}
-.en h2, .es h2 {
-    font-size: 4vw;
-}
-.en h3, .es h3 {
-    font-size: 3.5vw;
-}
-.en h4, .es h4 {
-    font-size: 3vw;
-}
-.en footer p, .es footer p, .en header p, .es header p  {
-    font-size: 1vw;
-}
-.en figcaption, .es figcaption {
-    font-size: 1.2vw;
-}
-.en blockquote, .es blockquote {
-    font-size: 2.1vw;
-}

@@ -46,8 +46,9 @@ section {
 
 header {
     padding: 0;
-    margin: 0;
+    margin-bottom: 2rem;
     line-height: 1;
+    border-bottom: 5px solid #F9F9F9;
 }
 
 header p {
@@ -67,6 +68,7 @@ h3, h4 {
     font-weight: normal;
     text-align: left;
     margin-bottom: .5rem;
+    margin-top: 0;
 }
 
 h1 {

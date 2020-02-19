@@ -333,6 +333,23 @@ a:active {
         min-height: 140px;
         font-size: 10px;
     }
+    table{
+		width: 50%;
+		
+	}
+	tr{width: 50%;
+		font-size: 5px;
+	}
+	th{width: 50%;
+		font-size: 5px;}
+	td{width: 50%;
+		font-size: 5px;
+	}
+	ul{
+		width: 50%;
+		font-size: 10px;
+	}
+}
 
 
 @media only screen and (max-width: 800px)and (min-width: 600px){
@@ -396,7 +413,7 @@ a:active {
    
     table{
 		width: 50%;
-		min-height: 100px;
+		
 	}
 	tr{width: 50%;
 		font-size: 5px;
@@ -482,7 +499,7 @@ a:active {
     }
     table{
 		width: 50%;
-		min-height: 100px;
+	
 	}
 	tr{width: 50%;
 		font-size: 5px;

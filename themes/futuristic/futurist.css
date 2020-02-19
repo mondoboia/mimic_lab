@@ -27,10 +27,13 @@ body { background: url(color.jpg) no-repeat center top scroll;
 }
 article{display: flex;
 	flex-direction: row;
-	background-color:rgba(255, 204, 204, 0.4);
+	background-color:rgba(158, 38, 38, 0.7);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
+	transform: translate(20px,40px);
+	border: 5px solid rgba(185, 73, 73, 0.7);
+	border-radius: 50px;
 	background-size: cover;
 	display: inline-block;
 	width: 100%;
@@ -40,8 +43,8 @@ article{display: flex;
 	flex-flow: center;
 	margin-top:50px;
 	margin-bottom: 10px;
-	margin-left:10px;
-	margin-right:10px;
+	margin-left:200px;
+	margin-right:50px;
 	padding: 10px;
 	width: 800px;  /* Or whatever */
 	height: 300px;
@@ -55,14 +58,16 @@ article{display: flex;
 	marquee-play-count: 1;
 	marquee-direction: down;
 	marquee-speed: normal;
-
 	text-align: justify;
+	animation-name: example;
+  animation-duration: 10s;
+  position:relative;
 
 }
 article:after {
-	background-color:rgba(158, 38, 38, 0.7);
+	background-color:rgba(175, 143, 143, 0.7);
 	display:block;
-	border: 5px solid rgba(255, 204, 204, 0.6);
+	border: 5px solid rgba(185, 73, 73, 0.7);
 	border-radius: 50px;
 	justify-content: center;
 	-webkit-background-size: cover;
@@ -75,7 +80,18 @@ article:after {
 	line-height: 0;
 	flex-wrap:wrap;
 	flex-flow:center;
+	position:absolute;
+	transform: translateXY(20px,40px);
+	animation-name: example;
+  animation-duration: 10s;
 }
+@keyframes example {
+	0%   {background-color: rgba(158, 38, 38, 0.7);}
+	25%  {background-color: rgb(191, 240, 237, 0.7);}
+	50%  {background-color: rgb(228, 179, 243, 0.7);}
+	100% {background-color: rgba(158, 38, 38, 0.7);}
+  }
+
 img{display:block;
 	border: 5px solid #ddd;
 	border-radius: 50px;
@@ -241,6 +257,22 @@ table{color: rgb(255, 255, 255);
 	padding: 5px;
 	width: 600px;
 }
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #D62929;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 600px) and (min-width: 300px)	{
@@ -319,7 +351,7 @@ table{color: rgb(255, 255, 255);
 		font-size: 5px;
 	}
 	th{width: 50%;
-		font-size: 10px;}
+		font-size: 5px;}
 	td{width: 50%;
 		font-size: 5px;
 	}
@@ -562,4 +594,3 @@ table{color: rgb(255, 255, 255);
 	flex-wrap: nowrap;
 	justify-content: space-between;
 }
-
